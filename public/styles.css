@@ -1,0 +1,148 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f3f6fa;
+    color: #243044;
+}
+
+.contenedor {
+    max-width: 760px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: #174a80;
+}
+
+.panel {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+label {
+    display: block;
+    margin: 15px 0 6px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #aab5c2;
+    border-radius: 6px;
+    font: inherit;
+}
+
+textarea {
+    min-height: 85px;
+}
+
+button {
+    background-color: #174a80;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #10365e;
+}
+
+button:focus-visible, input:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid #78a9e7;
+    outline-offset: 2px;
+}
+
+#lista-tareas {
+    list-style: none;
+    padding: 0;
+}
+
+#estado {
+    color: #526176;
+}
+
+
+.tarea {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 0;
+    border-bottom: 1px solid #e0e5eb;
+}
+
+.tarea p {
+    margin: 6px 0 0;
+    color: #526176;
+    overflow-wrap: anywhere;
+}
+
+.tarea strong {
+    overflow-wrap: anywhere;
+}
+
+.completada {
+    text-decoration: line-through;
+    color: #687789;
+}
+
+.acciones {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.acciones button {
+    margin-top: 0;
+}
+
+button.eliminar {
+    background-color: #a52b36;
+}
+
+button.eliminar:hover {
+    background-color: #82202a;
+}
+
+@media (max-width: 600px) {
+    .tarea {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
+
+.pie-pagina {
+    text-align: center;
+    padding: 20px;
+    color: #526176;
+    font-size: 14px;
+}
+
+.pie-pagina a {
+    color: #174a80;
+    text-decoration: underline;
+    margin: 0 8px;
+}
+
+.pie-pagina a:hover {
+    color: #10365e;
+}

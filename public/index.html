@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de tareas</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <main class="contenedor">
+        <header>
+            <h1>Mi lista de tareas</h1>
+            <p>Organiza tus actividades de manera sencilla.</p>
+        </header>
+
+        <section class="panel">
+            <h2>Nueva tarea</h2>
+            <form id="formulario-tarea">
+                <label for="titulo">Título</label>
+                <input type="text" id="titulo" maxlength="150"
+                       required placeholder="Escribe una tarea">
+
+                <label for="descripcion">Descripción</label>
+                <textarea id="descripcion"
+                    placeholder="Descripción opcional"></textarea>
+
+                <button type="submit">Agregar tarea</button>
+            </form>
+        </section>
+
+        <section class="panel">
+            <h2>Mis tareas</h2>
+            <p id="estado">Preparando la lista de tareas...</p>
+            <ul id="lista-tareas"></ul>
+        </section>
+        </main>
+
+    <footer class="pie-pagina">
+        <p>Mi lista de tareas | Proyecto académico</p>
+        <nav aria-label="Información legal">
+            <a href="/privacidad.html">Aviso de Privacidad</a>
+            <span aria-hidden="true"> | </span>
+            <a href="/terminos.html">Términos y Condiciones</a>
+        </nav>
+    </footer>
+
+    <script src="/app.js" defer></script>
+</body>
+</html>
